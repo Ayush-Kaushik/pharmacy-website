@@ -1,0 +1,108 @@
+.hours-layout {
+  h1 {
+    text-align: center;
+
+    span {
+      color: $primaryColor;
+    }
+  }
+
+  @include sm {
+    h1 {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+  }
+
+}
+
+.container {
+  display: flex;
+
+  .hours-block {
+    width: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 35px;
+    margin: 30px;
+    animation: slideInFromBottom 0.5s ease-in-out;
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .hour-item-layout {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+  }
+
+  .today {
+    background-color: rgba(0, 128, 0, 0.24);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+
+  @include sm {
+    flex-wrap: wrap;
+    width: 100%;
+
+    .hours-block {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(80%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-80%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+

@@ -1,0 +1,79 @@
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  animation: smoothScroll 1s forwards;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+.navbar {
+  background-color: $primaryColor;
+
+  .container {
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  h3 {
+    margin: 2%;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 10px;
+      margin: 5px;
+
+    }
+
+    a:hover {
+      border-bottom: 2px #fff solid;
+    }
+  }
+}
+
+@include sm {
+  .navbar {
+    .flex {
+      flex-direction: column;
+    }
+
+    ul {
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.1);
+
+      a {
+        margin: 0;
+      }
+    }
+  }
+}
+
+

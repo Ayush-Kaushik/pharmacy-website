@@ -1,0 +1,75 @@
+$primaryColor: #047aed;
+$secondaryColor: #ffffff;
+$backgroundColorPrimary: #ffffff;
+$linkColorUnvisited: #ffffff;
+$linkColorHover: #02667f;
+$dangerColor: rgb(206, 64, 102);
+$footerColor: #42586b;
+$footerLinkColor: #ece9e9;
+$footerColorHover: #0275d8;
+$iconColor: #000000;
+$titleColor: #4b4a4a;
+$subTitleColor: rgba(187, 187, 187, 0.18);
+$subTitleColorSecondary: #979595;
+
+$h1_sm: 25px;
+$h2_sm: 15px;
+$h1_md: 30px;
+$h1_lg: 60px;
+$h2_lg: 30px;
+
+
+@import "mixins";
+@import "Home";
+@import "Navigation";
+@import "Alert";
+@import "Information";
+@import "Hours";
+@import "Services";
+@import "Footer";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //font-family: 'Lato', sans-serif;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.page {
+  position: absolute;
+}
+
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+
+
+body {
+  line-height: 1.6;
+}
+
+
+
+

@@ -1,0 +1,36 @@
+.information-layout {
+  margin-top: 30px;
+  display: flex;
+
+  .contact-layout {
+    width: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 35px;
+    margin: 20px;
+
+    h2 {
+      padding: 2px;
+    }
+
+    p {
+      padding: 2px;
+      font-size: 14px;
+
+      span {
+        color: $primaryColor;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  @include sm {
+    flex-wrap: wrap;
+    width: 100%;
+
+    .contact-layout {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+}

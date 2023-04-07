@@ -1,0 +1,31 @@
+.alert-layout {
+  margin: 0;
+  width: 100%;
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    color: $dangerColor;
+    background-color: rgba(206, 64, 102, 0.11);
+    border: 2px solid $dangerColor;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 2%;
+  }
+}
+
+.positive-alert-layout {
+  margin: 0;
+  width: 100%;
+
+  div {
+    font-size: 15px;
+    text-align: center;
+    color: #3a793a;
+    background-color: rgba(92, 184, 92, 0.34);
+    border: 2px solid #5cb85c;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 2%;
+  }
+}

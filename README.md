@@ -1,6 +1,8 @@
 <h2 align="center">Pharmacy and Medical Office Website Template (React) 🩺💊👨‍⚕️</h2>
 
-This is a React template for creating a modern and responsive website for a pharmacy and medical office. It includes pre-built components and styles to help you get started quickly.
+This is a React template for creating a modern and responsive website for a pharmacy and medical office. It includes pre-built components and styles to help you get started quickly. 
+
+Check it out here: [https://pharmacy-website-template.vercel.app/](https://pharmacy-website-template.vercel.app/)
 
 📖 Features
 ------------

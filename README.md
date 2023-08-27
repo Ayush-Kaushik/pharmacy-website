@@ -4,6 +4,8 @@ This is a React template for creating a modern and responsive website for a phar
 
 Check it out here: [https://pharmacy-website-template.vercel.app/](https://pharmacy-website-template.vercel.app/)
 
+![Banner](./.readme/banner.gif)
+
 📖 Features
 ------------
 
